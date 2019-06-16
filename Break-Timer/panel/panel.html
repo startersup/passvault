@@ -1,0 +1,58 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <title>Break Timer Panel</title>
+  </head>
+
+  <body>
+    <div class="container" style="width:400px;padding:10px;">
+      <div class="text-center">
+          <div class="container">
+          <center><h3><span><img src="../assets/images/timermd.png">  Time Tracker</span></h3></center>
+         <div style="font-size:20px;font-weight:500;font-family: 'Roboto', sans-serif;"> <span id="time" style="font-size:40px;font-family: 'Roboto', sans-serif;font-weight:bold;">80:00 </span> Minutes more!</div>
+           <div id="myProgress">
+  <div id="myBar">0%</div>
+               </div> <br>
+</div>
+          </div>
+        </div>
+  </body>
+    <style>#myProgress {
+  width: 100%;
+  background-color: #ddd;
+}
+        body
+        {
+            background-color: #000;
+        }
+.text-center
+        {
+            border:2px solid #8aa0ae;
+            background-color: #ffffff;
+        }
+#myBar {
+  width: 0%;
+  height: 30px;
+  background-color: #4CAF50;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+}
+        .text-center h3
+        {
+           font-family: 'Roboto', sans-serif;font-weight:bold;color:green;
+            font-size:26px;
+        }
+
+
+    </style>
+    <script src="./panel.js"></script>
+</html>

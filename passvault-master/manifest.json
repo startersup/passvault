@@ -1,0 +1,33 @@
+{
+"manifest_version": 2,
+  "name": "Passvault",
+  "version": "1.0.1",
+  "author": "Saicharan",
+  "description": "Managing passwords using alexa skill",
+
+  "icons": {
+   
+    "32": "/assets/images/shield.png"
+    
+  },
+
+  "browser_action": {
+    "default_icon": {
+    "32": "/assets/images/shield.png"
+    },
+    "default_title": "Passvault",
+    "default_popup": "/panel/panel.html"
+  },
+"background":{
+  "scripts":["background/bg.js"]
+},
+"content_scripts": [
+  {
+    "matches": ["<all_urls>"],
+    "js": ["content_scripts/find.js"]
+  }],
+  "commands": {
+
+  }
+
+}

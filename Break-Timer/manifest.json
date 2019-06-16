@@ -1,0 +1,37 @@
+{
+"manifest_version": 2,
+  "name": "Break Timer",
+  "version": "1.0.1",
+  "author": "Saicharan",
+  "description": "A Browser Extension for Calculation the Break Time and Manage According to it",
+
+  "icons": {
+    "16": "/assets/images/timer.png",
+    "32": "/assets/images/timersm.png",
+    "48": "/assets/images/timermd.png",
+    "64": "/assets/images/timermdl.png",
+    "128": "/assets/images/timerlg.png",
+    "256": "/assets/images/timerxl.png"
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "16": "/assets/images/timer.png",
+    "32": "/assets/images/timersm.png",
+    "48": "/assets/images/timermd.png",
+    "64": "/assets/images/timermdl.png",
+    "128": "/assets/images/timerlg.png",
+    "256": "/assets/images/timerxl.png"
+    },
+    "default_title": "Break Timer",
+    "default_popup": "/panel/panel.html"
+  },
+"background":{
+  "scripts":["background/bg.js"]
+},
+"content_scripts": [
+  {
+    "matches": ["<all_urls>"],
+    "js": ["content_scripts/find.js"]
+  }]
+}
