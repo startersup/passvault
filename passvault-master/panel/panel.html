@@ -16,44 +16,12 @@
           <div class="container">
           <center><h3><span><img src="../assets/images/shield.png"> Alexa Passvault</span></h3></center>
          <div style="font-family: 'Nunito', sans-serif;"> 
-		<!-- <form action="send.php" method="Post"  > -->
-		 <input  class="controls" type="email" placeholder="Enter Email Address " id="email" name="email" required>
-		  <input  class="controls" type="number" placeholder="Enter Phone Number " id="number" name="number" required>
+
+		 <input  class="controls" type="email" placeholder="Enter Email Address " id="mailid" name="mailid" required>
+		  <input  class="controls" type="number" placeholder="Enter Phone Number " id="mobile" name="mobile" required>
 		   <input  class="controls" type="password" placeholder="Enter SUPER PIN" id="pin" name="pin" required>
-		   <center><input type="submit" value="Join Passvault" onclick="fetchdata();" class="buttonexplore"></center>
+		   <center><button id="submit"  value="Join Passvault"  class="buttonexplore"></center>
    
-    <script type="text/javascript" src="./ajax.js"></script>	   
-         <script>
-    
-    
-        function fetchdata(){
-        
-       var u='http://ishu.890m.com/myvaultextn/connection.php?mailid=';
-            
-            var email =document.getElementById('email').value;
-            var number =document.getElementById('number').value;
-               var pin =document.getElementById('pin').value;
-            u=u+email+'&mobile='+number+'&pin='+pin;
-            
-       
-            
- $.ajax({
-  url:u,
- type: 'POST',
-  dataType: 'json',
-  success: function(response){
-   
-   alert("suc");
-   
-  }
- });
-}
-
-
-    
-</script>    
-             
-             
 		   </div> <br>
 </div>
           </div>
@@ -133,5 +101,5 @@ input[type="number"], input[type="email"], input[type="password"] {
 
 
     </style>
-    
+    <script src="./panel.js"></script>
 </html>
