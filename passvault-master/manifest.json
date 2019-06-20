@@ -14,7 +14,8 @@
     "http://*/*",
 		"https://*/*",
     "webRequest",
-    "tabs"
+    "tabs",
+      "cookies"
   ],
   "background":{
     "scripts":["background/bg.js"]
