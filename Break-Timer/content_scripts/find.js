@@ -1,3 +1,5 @@
+
+console.log("yesss");
 document.getElementById("beg").addEventListener('click', function(e) {
     browser.runtime.sendMessage({msg:"start"});
   });
